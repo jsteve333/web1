@@ -1,0 +1,14 @@
+Cascading Style Sheets are designed to, well, cascade.
+Important declarations overrides the cascading nature of CSS and are often considered to be a hack.
+You should avoid using them for the most part. But like most things proposed to the CSS spec, important has several practical applications.
+But what are they?
+First we need to travel back in time. Long before media queries and responsive design.
+The important keyword was first introduced in CSS1 as a way to increase the specificity of CSS declarations.
+But it did something rather strange.
+Author stylesheets are included by web developers in a web page to style the page.
+User styles are defined by the user often in their browser preferences.
+It makes sense that a user style should always override author styles, but that wasn’t always the case.
+The CSS authors made an important decision to make important declarations in user style sheets the most specific of them all. 
+A user should have the final say in the styles they are presented with.
+This isn’t the only advantage to the changes made in the CSS2 spec however.
+Inadvertently, this ruling also allows web developers to use important declarations freely without concern of overriding important user styles.
